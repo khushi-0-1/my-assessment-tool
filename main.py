@@ -102,4 +102,5 @@ async def redirect_to_prof_page(request, university, name):
 
 
 if __name__ == "__main__":
-    app.run(host='127.0.0.1', port=8000, workers=2, auto_reload=True)
+   app.run(host='0.0.0.0', port=8000, workers=2)
+
