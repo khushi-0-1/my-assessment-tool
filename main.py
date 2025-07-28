@@ -100,10 +100,9 @@ async def redirect_to_prof_page(request, university, name):
         return response.redirect(
             'https://scholar.google.com%s&view_op=list_works&sortby=pubdate' % links[0].get('href'))
 
-
-
-  if __name__ == "__main__":
+if __name__ == "__main__":
     port = int(os.environ.get("PORT", 8000))
     app.run(host="0.0.0.0", port=port, workers=2)
+
 
 
